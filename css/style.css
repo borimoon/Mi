@@ -1,0 +1,95 @@
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*header*/
+.logo {
+  display: none;
+}
+
+/*game section*/
+.game {
+  /*dev*/background: rgba(100, 50, 80, 0.5);
+  height: 100vh;
+  width: 100vw;
+}
+
+/*uvp section*/
+
+/*cta section*/
+/*footer*/
+
+@media (min-width: 600px) {
+
+  /*header600*/
+  /*uvp section600*/
+  /*cta section600*/
+  /*footer600*/
+
+}
+
+@media (min-width: 900px) {
+
+  /*header900*/
+  /*uvp section900*/
+  /*cta section900*/
+  /*footer900*/
+
+}
+
+@media (min-width: 1200px) {
+
+  /*header1200*/
+  .logo {
+    display: block;
+  }
+
+  .logo-small {
+    display: none;
+  }
+
+  /*game section1200*/
+  /*uvp section1200*/
+
+  .uvp {
+    width: 100vw;
+  }
+
+  .uvp div {
+    height: 200px;
+    width: 50%;
+  }
+
+  .who-we-are {
+    /*dev*/background: rgba(255, 0, 0, 0.5);
+  }
+
+  .what-we-do {
+    /*dev*/background: rgba(0, 255, 0, 0.5);
+  }
+
+  .tools {
+    /*dev*/background: rgba(0, 0, 255, 0.5);
+  }
+
+  .why-us {
+    /*dev*/background: rgba(150, 0, 0, 0.5);
+  }
+
+  /*cta section1200*/
+  /*footer1200*/
+
+}
+
+@media (min-width: 1800px) {
+
+  /*header1800*/
+  /*uvp section1800*/
+  /*cta section1800*/
+  /*footer1800*/
+
+}
