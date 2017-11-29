@@ -56,12 +56,9 @@ h1 {
   /*uvp section1200*/
 
   .uvp {
-    width: 100vw;
-  }
-
-  .uvp div {
-    height: 200px;
-    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 400px 400px;
   }
 
   .who-we-are {
