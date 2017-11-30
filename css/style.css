@@ -3,7 +3,8 @@ html {
 }
 
 body {
-font-family: 'Open Sans', sans-serif;
+  color: #070707;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -35,10 +36,29 @@ p {
   font-size: 1.7em;
 }
 
+a {
+  color: #070707;
+  text-decoration: none;
+}
+
+/*flex containers*/
+.header,
+.game {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
 /*header*/
 .header {
-  background-color: #fff;
+  /*dev*/background-color: turquoise;
+  height: 50px;
   position: fixed;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   width: 100%;
 }
 
@@ -51,10 +71,40 @@ p {
   display: none;
 }
 
+.logo-small {
+  margin-left: 10px;
+}
+
+/*menu*/
+.main-menu {
+  margin-right: 22px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu li {
+  margin-right: 42px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menuitem {
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
 /*game section*/
 .game {
   /*dev*/background: rgba(100, 50, 80, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 100vh;
+  padding-top: 170px;
   width: 100%;
 }
 
@@ -92,12 +142,30 @@ p {
 @media (min-width: 1200px) {
 
   /*header1200*/
+  .header {
+    height: 170px;
+  }
+
+  .header-narrow {
+    height: 70px;
+  }
+
   .logo {
     display: block;
+    margin-left: 22px;
   }
 
   .logo-small {
     display: none;
+  }
+
+  .menu {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
   }
 
   /*game section1200*/

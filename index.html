@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Mi</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta name="author" content="Winkler Stenzel" />
     <meta name="description" content="..." />
     <meta property="og:image" content="#" />
@@ -31,24 +33,27 @@
   </head>
 
   <body>
-    <header class="header">
+    <header id="navbar" class="header">
       <a class="branding" href="#">
         <img class="logo" src="assets/Mi-logo.svg" alt="Mi műhely"/>
         <img class="logo-small" src="assets/Mi-logo-s.svg" alt="Mi műhely"/>
       </a>
 
       <nav class="main-menu">
-        <ul>
+
+        <div id="toggleOn" class="toggle"><span></span></div>
+
+        <ul id="menu" class="menu">
           <li>
-            <a href="#"></a>
+            <a class="menuitem" href="#">projektek</a>
           </li>
 
           <li>
-            <a href="#"></a>
+            <a class="menuitem" href="#">írások</a>
           </li>
 
           <li>
-            <a href="#"></a>
+            <a class="menuitem" href="#">kapcsolat</a>
           </li>
         </ul>
       </nav>
