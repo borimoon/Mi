@@ -43,6 +43,7 @@ a {
 
 /*flex containers*/
 .header,
+.landing,
 .game {
   -webkit-align-items: center;
   align-items: center;
@@ -60,6 +61,7 @@ a {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: 100%;
+  z-index: 10;
 }
 
 .branding {
@@ -97,8 +99,8 @@ a {
   text-transform: uppercase;
 }
 
-/*game section*/
-.game {
+/*landing section*/
+.landing {
   /*dev*/background: rgba(100, 50, 80, 0.5);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -106,7 +108,44 @@ a {
   height: 100vh;
   padding-top: 170px;
   width: 100%;
+  z-index: 1;
 }
+
+/*game*/
+
+.cta-landing {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.cta-next {
+  background-color: #070707;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 60px;
+  position: relative;
+  width: 60px;
+}
+
+.cta-next::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 24px;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  width: 25px;
+}
+
+
 
 /*uvp section*/
 
@@ -168,7 +207,30 @@ a {
     justify-content: space-between;
   }
 
-  /*game section1200*/
+  /*landing-section1200*/
+  .landing {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /*game1200*/
+
+  .game {
+    /*dev*/background: rgba(0, 0, 100, 0.5);
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 85px auto 0;
+    width: 620px;
+  }
+
+  .element {
+    background-color: #07a0c8;
+    height: 50px;
+    margin: 30px;
+    width: 50px;
+  }
+
   /*uvp section1200*/
   /*GRID*/
   .uvp {

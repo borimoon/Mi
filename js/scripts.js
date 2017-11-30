@@ -1,7 +1,7 @@
 // header height resize
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > $('.game').outerHeight()){
+        if ($(this).scrollTop() > $('.landing').outerHeight()){
           $('.header').addClass("header-narrow");
         }
         else {
