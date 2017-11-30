@@ -1,12 +1,52 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
 font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 10.7em;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.7em;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.7em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.7em;
 }
 
 /*header*/
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+.branding {
+  cursor: pointer;
+  display: inline-block;
+}
+
 .logo {
   display: none;
 }
@@ -15,10 +55,16 @@ h1 {
 .game {
   /*dev*/background: rgba(100, 50, 80, 0.5);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 /*uvp section*/
+
+.uvp-text {
+  font-size: 2.7em;
+  font-weight: 600;
+  line-height: 1.3;
+}
 
 /*cta section*/
 /*footer*/
@@ -36,6 +82,8 @@ h1 {
 
   /*header900*/
   /*uvp section900*/
+
+
   /*cta section900*/
   /*footer900*/
 
@@ -54,27 +102,45 @@ h1 {
 
   /*game section1200*/
   /*uvp section1200*/
-
+  /*GRID*/
   .uvp {
     display: grid;
+    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
+    -ms-grid-rows: 400px 400px 400px 400px;
     grid-template-rows: 400px 400px 400px 400px;
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  .uvp div {
+    -ms-grid-column-align: center;
+    align-self: center;
   }
 
   .who-we-are {
-    /*dev*/background: rgba(255, 0, 0, 0.5);
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .uvp div:nth-child(1),
+  .uvp div:nth-child(3) {
+    text-align: right;
   }
 
   .what-we-do {
-    /*dev*/background: rgba(0, 255, 0, 0.5);
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .tools {
-    /*dev*/background: rgba(0, 0, 255, 0.5);
+    grid-column: 1;
+    grid-row: 3;
   }
 
   .why-us {
-    /*dev*/background: rgba(150, 0, 0, 0.5);
+    grid-column: 2;
+    grid-row: 4;
   }
 
   /*cta section1200*/
