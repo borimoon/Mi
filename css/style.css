@@ -79,11 +79,106 @@ a {
 
 /*menu*/
 .main-menu {
-  margin-right: 22px;
+  margin-right: 10px;
+}
+
+.toggle,
+.menuopen span::before,
+.menuopen span::after {
+  z-index: 999;
+}
+
+.toggle span,
+.menuopen span {
+  border-radius: 1px;
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 25px;
+}
+
+.toggle span {
+  background-color: #070707;
+  -webkit-transition: background-color .7s ease;
+  -moz-transition: background-color .7s ease;
+  -ms-transition: background-color .7s ease;
+  -o-transition: background-color .7s ease;
+  transition: background-color .7s ease;
+}
+
+.toggle span::before,
+.toggle span::after {
+  background-color: #070707;
+  border-radius: 1px;
+  content: ' ';
+  display: block;
+  height: 4px;
+  position: absolute;
+  width: 25px;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+}
+
+.toggle span::before {
+  top: -9px;
+}
+
+.toggle span::after {
+  bottom: -9px;
+}
+
+.menuopen span {
+  background-color: transparent;
+  -webkit-transition: background-color .7s ease;
+  -moz-transition: background-color .7s ease;
+  -ms-transition: background-color .7s ease;
+  -o-transition: background-color .7s ease;
+  transition: background-color .7s ease;
+}
+
+.menuopen span::before,
+.menuopen span::after {
+  background-color: #070707;
+  border-radius: 1px;
+  content: ' ';
+  display: block;
+  height: 4px;
+  position: absolute;
+  width: 30px;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+}
+
+.menuopen span::before {
+  -webkit-transform: translateY(9px) rotateZ(45deg);
+  -moz-transform: translateY(9px) rotateZ(45deg);
+  -ms-transform: translateY(9px) rotateZ(45deg);
+  -o-transform: translateY(9px) rotateZ(45deg);
+  transform: translateY(9px) rotateZ(45deg);
+}
+
+.menuopen span::after {
+  -webkit-transform: translateY(-9px) rotateZ(-45deg);
+  -moz-transform: translateY(-9px) rotateZ(-45deg);
+  -ms-transform: translateY(-9px) rotateZ(-45deg);
+  -o-transform: translateY(-9px) rotateZ(-45deg);
+  transform: translateY(-9px) rotateZ(-45deg);
 }
 
 .menu {
+  background-color: #fff;
   display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu li {
@@ -225,13 +320,25 @@ a {
     display: none;
   }
 
+  .main-menu {
+    margin-right: 22px;
+  }
+
+  .toggle {
+    display: none;
+  }
+
   .menu {
+    background-color: transparent;
     -webkit-align-items: center;
     align-items: center;
-    display: -webkit-flex;
-    display: flex;
+    display: -webkit-flex !important;
+    display: flex !important;
+    height: auto;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    position: static;
+    width: auto;
   }
 
   /*landing-section1200*/
