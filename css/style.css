@@ -43,8 +43,7 @@ a {
 
 /*flex containers*/
 .header,
-.landing,
-.game {
+.landing {
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-flex;
@@ -218,6 +217,26 @@ a {
   width: 100%;
 }
 
+.elements {
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
 .element {
   background-color: #07a0c8;
   height: 50px;
@@ -368,7 +387,7 @@ a {
   }
 
   .cta-title {
-    left: -290px;
+    left: -285px;
     position: absolute;
     bottom: 0;
   }
