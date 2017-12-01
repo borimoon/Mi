@@ -243,6 +243,11 @@ a {
   margin: 10px;
   width: 50px;
 }
+
+.draggable {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
 /*/game*/
 
 .cta-landing {
