@@ -1,4 +1,13 @@
 // header height resize
+$(document).ready(function (){
+    $('.cta-main').click(function (){
+        $('html, body').animate({
+            scrollTop: $('.uvp').offset().top
+        }, 700);
+    });
+});
+
+// header height resize
 $(window).scroll(function() {
     if ($(this).scrollTop() > $('.landing').offset().top){
       $('.header').addClass("header-narrow");

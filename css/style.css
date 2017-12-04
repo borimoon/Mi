@@ -92,6 +92,8 @@ a {
 
 .toggle span,
 .menuopen span {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
   display: block;
   height: 4px;
@@ -111,6 +113,8 @@ a {
 .toggle span::before,
 .toggle span::after {
   background-color: #070707;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
   content: ' ';
   display: block;
@@ -144,6 +148,8 @@ a {
 .menuopen span::before,
 .menuopen span::after {
   background-color: #070707;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
   content: ' ';
   display: block;
@@ -225,26 +231,105 @@ a {
   align-items: stretch;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
   -webkit-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
 
 .row {
+  -webkit-align-items: center;
+  align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+
+.row-1,
+.row-3 {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.row-2 {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
 .element {
-  background-color: #07a0c8;
-  height: 50px;
   margin: 10px;
-  width: 50px;
+}
+
+.element-1 {
+  border-bottom: 58px solid #07a0c8;
+  border-right: 88px solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.element-2 {
+  background-color: #07a0c8;
+  height: 29px;
+  width: 32px;
+}
+
+.element-3 {
+  background-color: #07a0c8;
+  height: 19px;
+  width: 69px;
+}
+
+.element-4 {
+  background-color: #07a0c8;
+  height: 29px;
+  width: 81px;
+}
+
+.element-5 {
+  background-color: #07a0c8;
+  height: 62px;
+  position: relative;
+  width: 70px;
+}
+
+.element-5::after {
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  bottom: 9px;
+  content: '';
+  display: block;
+  height: 30px;
+  position: absolute;
+  right: 9px;
+  width: 30px;
+}
+
+.element-6 {
+  border-bottom: 58px solid #07a0c8;
+  border-left: 88px solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.element-7 {
+  background-color: #07a0c8;
+  height: 81px;
+  width: 25px;
+}
+
+.element-8 {
+  background-color: #07a0c8;
+  height: 29px;
+  width: 34px;
+}
+
+.element-9 {
+  background-color: #07a0c8;
+  height: 81px;
+  width: 81px;
 }
 
 .draggable {
@@ -265,6 +350,8 @@ a {
 
 .scroll-down {
   background-color: #070707;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
   height: 34px;
@@ -275,6 +362,8 @@ a {
 
 .scroll-down::after {
   background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   content: '';
   display: block;
@@ -343,9 +432,61 @@ a {
 @media (min-width: 900px) {
 
   /*header900*/
+  /*game900*/
+  .element-1 {
+    border-bottom-width: 97px;
+    border-right-width: 148px;
+  }
+
+  .element-2 {
+    height: 48px;
+    width: 53px;
+  }
+
+  .element-3 {
+    height: 32px;
+    width: 116px;
+  }
+
+  .element-4 {
+    height: 48px;
+    width: 136px;
+  }
+
+  .element-5 {
+    height: 105px;
+    width: 117px;
+  }
+
+  .element-5::after {
+    bottom: 15px;
+    height: 49px;
+    right: 15px;
+    width: 49px;
+  }
+
+  .element-6 {
+    border-bottom-width: 97px;
+    border-left-width: 148px;
+  }
+
+  .element-7 {
+    height: 137px;
+    width: 42px;
+  }
+
+  .element-8 {
+    height: 48px;
+    width: 57px;
+  }
+
+  .element-9 {
+    height: 136px;
+    width: 136px;
+  }
+  /*/game900*/
+
   /*uvp section900*/
-
-
   /*cta section900*/
   /*footer900*/
 
@@ -428,6 +569,7 @@ a {
   .element {
     margin: 0;
   }
+
   /*/game1200*/
 
   .cta-landing {
