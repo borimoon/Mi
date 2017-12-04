@@ -96,9 +96,12 @@ a {
   -moz-border-radius: 1px;
   border-radius: 1px;
   display: block;
-  height: 4px;
+  height: 7px;
   position: relative;
-  width: 25px;
+}
+
+.menuopen span {
+  width: 44px;
 }
 
 .toggle span {
@@ -108,6 +111,7 @@ a {
   -ms-transition: background-color .7s ease;
   -o-transition: background-color .7s ease;
   transition: background-color .7s ease;
+  width: 37px;
 }
 
 .toggle span::before,
@@ -118,9 +122,9 @@ a {
   border-radius: 1px;
   content: ' ';
   display: block;
-  height: 4px;
+  height: 7px;
   position: absolute;
-  width: 25px;
+  width: 37px;
   -webkit-transition: transform .3s ease;
   -moz-transition: transform .3s ease;
   -ms-transition: transform .3s ease;
@@ -129,11 +133,11 @@ a {
 }
 
 .toggle span::before {
-  top: -9px;
+  top: -13px;
 }
 
 .toggle span::after {
-  bottom: -9px;
+  bottom: -13px;
 }
 
 .menuopen span {
@@ -153,9 +157,9 @@ a {
   border-radius: 1px;
   content: ' ';
   display: block;
-  height: 4px;
+  height: 7px;
   position: absolute;
-  width: 30px;
+  width: 44px;
   -webkit-transition: transform .3s ease;
   -moz-transition: transform .3s ease;
   -ms-transition: transform .3s ease;
@@ -164,19 +168,19 @@ a {
 }
 
 .menuopen span::before {
-  -webkit-transform: translateY(9px) rotateZ(45deg);
-  -moz-transform: translateY(9px) rotateZ(45deg);
-  -ms-transform: translateY(9px) rotateZ(45deg);
-  -o-transform: translateY(9px) rotateZ(45deg);
-  transform: translateY(9px) rotateZ(45deg);
+  -webkit-transform: translateY(13px) rotateZ(45deg);
+  -moz-transform: translateY(13px) rotateZ(45deg);
+  -ms-transform: translateY(13px) rotateZ(45deg);
+  -o-transform: translateY(13px) rotateZ(45deg);
+  transform: translateY(13px) rotateZ(45deg);
 }
 
 .menuopen span::after {
-  -webkit-transform: translateY(-9px) rotateZ(-45deg);
-  -moz-transform: translateY(-9px) rotateZ(-45deg);
-  -ms-transform: translateY(-9px) rotateZ(-45deg);
-  -o-transform: translateY(-9px) rotateZ(-45deg);
-  transform: translateY(-9px) rotateZ(-45deg);
+  -webkit-transform: translateY(-13px) rotateZ(-45deg);
+  -moz-transform: translateY(-13px) rotateZ(-45deg);
+  -ms-transform: translateY(-13px) rotateZ(-45deg);
+  -o-transform: translateY(-13px) rotateZ(-45deg);
+  transform: translateY(-13px) rotateZ(-45deg);
 }
 
 .menu {
@@ -432,17 +436,19 @@ a {
 
 .top span::before {
   left: 6px;
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .top span::after {
   right: 6px;
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
