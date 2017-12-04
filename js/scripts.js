@@ -1,8 +1,17 @@
-// header height resize
+// animate scroll down
 $(document).ready(function (){
     $('.cta-main').click(function (){
         $('html, body').animate({
             scrollTop: $('.uvp').offset().top
+        }, 700);
+    });
+});
+
+// animate scroll top
+$(document).ready(function (){
+    $('.top').click(function (){
+        $('html, body').animate({
+            scrollTop: $('.landing').offset().top
         }, 700);
     });
 });
