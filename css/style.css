@@ -230,6 +230,19 @@ a {
   width: 100%;
 }
 
+.play {
+  color: #5f6061;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 2.2em;
+  margin-right: 35px;
+  text-align: right;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+
 .elements {
   -webkit-align-items: stretch;
   align-items: stretch;
@@ -660,7 +673,17 @@ a {
   .game {
     height: 400px;
     margin: 2% auto 0;
+    position: relative;
     width: 620px;
+  }
+
+  .play {
+    font-size: 3.7em;
+    left: -110px;
+    margin-right: 0;
+    position: absolute;
+    text-align: right;
+    top: 100px;
   }
 
   .element {
