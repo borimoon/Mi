@@ -621,7 +621,7 @@ a {
   }
 
   .header-narrow {
-    height: 60px;
+    height: 70px;
   }
 
   .logo {
@@ -864,7 +864,7 @@ a {
   }
 
   .why-us::after {
-    height: 485px;
+    height: 487px;
     left: -65px;
     top: 80px;
     -webkit-transform: rotate(-14deg);
