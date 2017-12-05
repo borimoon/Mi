@@ -20,30 +20,33 @@ h2 {
   line-height: 1.3;
 }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.7em;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
 h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 p {
   font-size: 1.7em;
 }
 
+em {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 600;
+}
+
 .side-text {
-  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4;
 }
 
 .side-text-small {
-  font-size: 1.1em;
-  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
 }
 
 a {
@@ -415,7 +418,6 @@ a {
 }
 
 .uvp-text {
-  font-size: 1.7em;
   font-weight: 600;
   line-height: 1.3;
 }
@@ -528,12 +530,12 @@ a {
   width: 100%;
 }
 
-.project-title,
-.project-description {
+.project-short-title,
+.project-short {
   margin-left: 27px;
 }
 
-.project-title::before {
+.project-short-title::before {
   background-color: #e6e6e6;
   content: '';
   display: block;
@@ -549,7 +551,7 @@ a {
   width: 12px;
 }
 
-.project-title {
+.project-short-title {
   margin-bottom: 5px;
 }
 
@@ -569,6 +571,62 @@ a {
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
+}
+
+/*S I N G L E  P R O J E C T*/
+.project-page {
+  margin: 0 15px;
+  padding-top: 70px;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.main-image img {
+  height: auto;
+  width: 100%;
+}
+
+.project-description {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  /*margin-bottom: 20px;*/
+  margin-top: 30px;
+}
+
+.project-title {
+  margin-bottom: 10px;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.project-download {
+  margin-top: 20px;
+}
+
+.project-download {
+  border-bottom: 2px solid #070707;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.project-side {
+  margin-bottom: 30px;
+}
+
+.project-map {
+  background-color: grey;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 286px;
   width: 100%;
 }
 
@@ -782,7 +840,7 @@ a {
   }
 
   .menuitem {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   /*landing-section1200*/
@@ -1035,6 +1093,54 @@ a {
 
   .project:nth-child(4n) {
     margin-right: 0;
+  }
+
+  /*S I N G L E  P R O J E C T 1200*/
+  .project-page {
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 1200px;
+  }
+
+  .main-image {
+    max-height: 700px;
+    max-width: 1200px;
+  }
+
+  .project-description {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 70px;
+    margin-top: 90px;
+  }
+
+  .project-main {
+    -webkit-flex: 2 2;
+    flex: 2 2;
+    margin-right: 20px;
+  }
+
+  .project-title {
+    font-size: 3.7em;
+    margin-bottom: 60px;
+  }
+
+  .project-download {
+    margin-top: 30px;
+  }
+
+  .project-side {
+    margin: 12px 20px 0 0;
+    width: 286px;
+  }
+
+  .project-map {
+    background-color: grey;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 286px;
+    width: 286px;
   }
 
   /*footer1200*/
