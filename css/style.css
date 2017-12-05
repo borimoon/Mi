@@ -195,8 +195,8 @@ a {
 }
 
 .menu li {
-  margin-bottom: 17px;
-  margin-top: 17px;
+  margin-bottom: 27px;
+  margin-top: 27px;
 }
 
 .menu li:first-child {
@@ -227,20 +227,25 @@ a {
   flex-wrap: wrap;
   height: 70%;
   margin-top: 7%;
+  position: relative;
   width: 100%;
 }
 
 .play {
   color: #5f6061;
+  display: inline-block;
   font-family: 'Architects Daughter', cursive;
   font-size: 2.2em;
-  margin-right: 35px;
+  position: absolute;
+  right: 30px;
   text-align: right;
+  top: -7px;
   -webkit-transform: rotate(-7deg);
   -moz-transform: rotate(-7deg);
   -ms-transform: rotate(-7deg);
   -o-transform: rotate(-7deg);
   transform: rotate(-7deg);
+  z-index: 9;
 }
 
 .elements {
@@ -482,30 +487,36 @@ a {
 /*footer*/
 .footer {
   margin: 100px 10px 17px;
+  position: relative;
   text-align: center;
+}
+
+.top {
+  position: absolute;
+  right: 15px;
+  top: 9px;
 }
 
 .top span {
   cursor: pointer;
   display: block;
   height: 20px;
-  margin: 0 auto 22px;
   position: relative;
   width: 30px;
 }
 
 .top span::before,
 .top span::after {
-  background-color: #5f6061;
+  background-color: #b9bbbe;
   content: '';
   display: block;
   height: 21px;
   position: absolute;
-  width: 7px;
+  width: 3px;
 }
 
 .top span::before {
-  left: 6px;
+  left: 7px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -514,7 +525,7 @@ a {
 }
 
 .top span::after {
-  right: 6px;
+  right: 7px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -673,16 +684,13 @@ a {
   .game {
     height: 400px;
     margin: 2% auto 0;
-    position: relative;
     width: 620px;
   }
 
   .play {
     font-size: 3.7em;
     left: -110px;
-    margin-right: 0;
-    position: absolute;
-    text-align: right;
+    right: auto;
     top: 100px;
   }
 
@@ -856,7 +864,7 @@ a {
   }
 
   .why-us::after {
-    height: 480px;
+    height: 485px;
     left: -65px;
     top: 80px;
     -webkit-transform: rotate(-14deg);
@@ -895,18 +903,29 @@ a {
   /*footer1200*/
   .footer {
     margin: 190px auto 27px;
-    position: relative;
     width: 1200px;
   }
 
   .top {
-    position: absolute;
     right: 0;
     top: -220px;
   }
 
   .top span {
     margin: 0 0 0;
+  }
+
+  .top span::before,
+  .top span::after {
+    width: 7px;
+  }
+
+  .top span::before {
+    left: 6px;
+  }
+
+  .top span::after {
+    right: 6px;
   }
 
   .social {
