@@ -494,9 +494,82 @@ a {
   transform: rotate(45deg);
 }
 
-/*G A L L E R Y 1200*/
+/*G A L L E R Y */
 .gallery {
   padding-top: 70px;
+}
+
+.projects {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.project {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.project a {
+  display: block;
+}
+
+.project-image {
+  height: 222px;
+  margin-bottom: 17px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-image img {
+  height: auto;
+  width: 100%;
+}
+
+.project-title,
+.project-description {
+  margin-left: 27px;
+}
+
+.project-title::before {
+  background-color: #e6e6e6;
+  content: '';
+  display: block;
+  height: 70px;
+  left: 6px;
+  position: absolute;
+  top: 207px;
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+  width: 12px;
+}
+
+.project-title {
+  margin-bottom: 5px;
+}
+
+.download {
+  background-color: #070707;
+  height: 22px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 44px;
+}
+
+.download a {
+  color: #fff;
+  display: block;
+  height: 100%;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 /*footer*/
@@ -557,8 +630,30 @@ a {
   /*header600*/
   /*uvp section600*/
   /*cta section600*/
-  /*footer600*/
 
+  /*G A L L E R Y 600*/
+  .projects {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .project {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .project-image {
+    width: 285px;
+  }
+
+  .project-image img {
+    width: 285px;
+  }
+  /*footer600*/
 }
 
 @media (min-width: 900px) {
@@ -918,15 +1013,15 @@ a {
   }
 
   /*G A L L E R Y 1200*/
+  /*dev*/.menu-projects {
+  font-weight: 600;
+  }
+
   .gallery {
     padding-top: 150px;
   }
 
   .projects {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
     margin: 0 auto;
@@ -934,29 +1029,13 @@ a {
   }
 
   .project {
-    margin-bottom: 20px;
+    margin-left: 0;
     margin-right: 20px;
-  }
-
-  .project a {
-    display: block;
-  }
-
-  .project-image {
-    /*dev*/background-color: grey;
-    height: 222px;
-    margin-bottom: 17px;
-    width: 285px;
   }
 
   .project:nth-child(4n) {
     margin-right: 0;
   }
-
-  .project-title {
-    margin-bottom: 5px;
-  }
-
 
   /*footer1200*/
   .footer {
