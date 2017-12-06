@@ -737,12 +737,15 @@ a {
   bottom: 0;
 }
 
-.main-image,
 .project-image {
+  margin-bottom: 30px;
   width: 100%;
 }
 
-.main-image img,
+.project-image:last-child {
+  margin-bottom: 0;
+}
+
 .project-image img {
   height: auto;
   width: 100%;
@@ -807,7 +810,7 @@ a {
 }
 
 .quote {
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 /*nav-bottom*/
@@ -1282,7 +1285,7 @@ a {
     width: 30px;
   }
 
-  .main-image {
+  .project-image {
     max-height: 700px;
     max-width: 1200px;
   }
@@ -1325,8 +1328,8 @@ a {
     width: 286px;
   }
 
-  .project-image {
-    max-height: 695px;
+  .project-image-portrait {
+    max-height: 700px;
     max-width: 590px;
   }
 
@@ -1343,6 +1346,7 @@ a {
 
   .quote {
     font-size: 3.7em;
+    margin-bottom: 0;
     margin-top: 100px;
     max-width: 387px;
     position: relative;
