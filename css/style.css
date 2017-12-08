@@ -920,6 +920,11 @@ a {
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
+
+  .menu li:first-child {
+    margin-top: 70px;
+  }
+
   .play,
   .elements {
     display: none;
