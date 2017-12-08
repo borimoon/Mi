@@ -249,10 +249,8 @@ a {
 
 /*game*/
 .game {
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
   height: 70%;
-  margin-top: 7%;
+  margin-top: 15px;
   position: relative;
   width: 100%;
 }
@@ -829,45 +827,11 @@ a {
   /*-------H E A D E R / L A N D I N G / F O O T E R 600-------*/
 
   /*header600*/
-  /*uvp section600*/
-  /*cta section600*/
-  /*footer600*/
-
-  /*-------G A L L E R Y 600-------*/
-  .projects {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    margin-left: 10px;
-    margin-right: 10px;
+  /*game600*/
+  .game {
+    margin-top: 25px;
   }
 
-  .projects::after {
-    content: '';
-    height: 0;
-    width: calc(2*100%/3);
-  }
-
-  .project {
-    -webkit-flex: 1 1;
-    flex: 1 1;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .gallery-image img {
-    min-width: 285px;
-  }
-}
-
-@media (min-width: 900px) {
-  /*-------H E A D E R / L A N D I N G / F O O T E R 900-------*/
-
-  /*header900*/
-  /*game900*/
   .element-1 {
     border-bottom-width: 97px;
     border-right-width: 148px;
@@ -918,6 +882,66 @@ a {
   .element-9 {
     height: 136px;
     width: 136px;
+  }
+  /*uvp section600*/
+  /*cta section600*/
+  /*footer600*/
+
+  /*-------G A L L E R Y 600-------*/
+  .projects {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .projects::after {
+    content: '';
+    height: 0;
+    width: calc(2*100%/3);
+  }
+
+  .project {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .gallery-image img {
+    min-width: 285px;
+  }
+}
+
+@media (min-width: 900px) {
+  /*-------H E A D E R / L A N D I N G / F O O T E R 900-------*/
+
+  /*header900*/
+  /*game900*/
+  .game {
+    margin-top: 0;
+  }
+
+  .play {
+    font-size: 3.7em;
+    left: 50px;
+    right: auto;
+    top: 100px;
+  }
+
+  .elements {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .element {
+    margin: 20px 50px;
   }
   /*/game900*/
 
@@ -1005,15 +1029,19 @@ a {
   /*game1200*/
   .game {
     height: 400px;
-    margin: 2% auto 0;
+    margin: 25px auto 0;
     width: 620px;
   }
 
   .play {
-    font-size: 3.7em;
     left: -110px;
-    right: auto;
-    top: 100px;
+  }
+
+  .elements {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
   }
 
   .element {
