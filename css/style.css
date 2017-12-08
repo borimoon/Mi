@@ -883,6 +883,8 @@ a {
     height: 136px;
     width: 136px;
   }
+  /*/game600*/
+
   /*uvp section600*/
   /*cta section600*/
   /*footer600*/
@@ -917,6 +919,22 @@ a {
   }
 }
 
+@media (max-width: 900px) and (orientation: landscape) {
+  .play,
+  .elements {
+    display: none;
+  }
+
+  .game::after {
+    color: #07a0c8;
+    content: 'Fordítsd el a képernyőt, és játssz!';
+    display: block;
+    font-size: 1.7em;
+    margin: 25px auto 0;
+    text-align: center;
+  }
+}
+
 @media (min-width: 900px) {
   /*-------H E A D E R / L A N D I N G / F O O T E R 900-------*/
 
@@ -945,10 +963,78 @@ a {
   }
   /*/game900*/
 
-  /*uvp section900*/
-  /*cta section900*/
-  /*footer900*/
+  .scroll-down {
+    height: 62px;
+    width: 62px;
+  }
 
+  .scroll-down::after {
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+  }
+
+  /*uvp section900*/
+  .uvp-title {
+    font-size: 10.7em;
+  }
+
+  .uvp-text {
+    font-size: 2.7em;
+  }
+
+  .main {
+    font-size: 3.7em;
+  }
+
+  /*cta section900*/
+  .go span {
+    height: 44px;
+    margin: 0 auto 27px;
+    width: 64px;
+  }
+
+  .go span::before,
+  .go span::after {
+    height: 44px;
+    width: 17px;
+  }
+
+  .go span::before {
+    left: 14px;
+  }
+
+  .go span::after {
+    right: 14px;
+  }
+
+  .cta-projects {
+    font-size: 4.7em;
+  }
+
+  /*footer900*/
+  .top {
+    right: 0;
+    top: -110px;
+  }
+
+  .top span {
+    margin: 0 0 0;
+  }
+
+  .top span::before,
+  .top span::after {
+    width: 7px;
+  }
+
+  .top span::before {
+    left: 6px;
+  }
+
+  .top span::after {
+    right: 6px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1047,7 +1133,6 @@ a {
   .element {
     margin: 0;
   }
-
   /*/game1200*/
 
   .cta-landing {
@@ -1062,19 +1147,10 @@ a {
 
   .scroll-down {
     bottom: 35px;
-    height: 62px;
     left: 50%;
     margin-bottom: 0;
     margin-left: -31px;
     position: relative;
-    width: 62px;
-  }
-
-  .scroll-down::after {
-    height: 30px;
-    margin-left: -15px;
-    margin-top: -15px;
-    width: 30px;
   }
 
   /*uvp section1200*/
@@ -1091,11 +1167,6 @@ a {
     width: 1200px;
   }
 
-  .uvp::after {
-    content: '';
-    display: block;
-  }
-
   .uvp-item {
     -ms-grid-column-align: center;
     align-self: center;
@@ -1110,18 +1181,6 @@ a {
     position: absolute;
     width: 18px;
     z-index: -10;
-  }
-
-  .uvp-title {
-    font-size: 10.7em;
-  }
-
-  .uvp-text {
-    font-size: 2.7em;
-  }
-
-  .main {
-    font-size: 3.7em;
   }
 
   .who-we-are {
@@ -1224,31 +1283,6 @@ a {
     transform: rotate(-14deg);
   }
 
-  /*cta1200*/
-  .go span {
-    height: 44px;
-    margin: 0 auto 27px;
-    width: 64px;
-  }
-
-  .go span::before,
-  .go span::after {
-    height: 44px;
-    width: 17px;
-  }
-
-  .go span::before {
-    left: 14px;
-  }
-
-  .go span::after {
-    right: 14px;
-  }
-
-  .cta-projects {
-    font-size: 4.7em;
-  }
-
   /*footer1200*/
   .footer {
     margin: 190px auto 27px;
@@ -1256,25 +1290,7 @@ a {
   }
 
   .top {
-    right: 0;
     top: -220px;
-  }
-
-  .top span {
-    margin: 0 0 0;
-  }
-
-  .top span::before,
-  .top span::after {
-    width: 7px;
-  }
-
-  .top span::before {
-    left: 6px;
-  }
-
-  .top span::after {
-    right: 6px;
   }
 
   .social {
