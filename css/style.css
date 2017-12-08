@@ -269,7 +269,6 @@ a {
   -ms-transform: rotate(-7deg);
   -o-transform: rotate(-7deg);
   transform: rotate(-7deg);
-  z-index: 9;
 }
 
 .elements {
@@ -886,8 +885,9 @@ a {
   /*/game600*/
 
   /*uvp section600*/
-  /*cta section600*/
-  /*footer600*/
+  .uvp {
+    text-align: center;
+  }
 
   /*-------G A L L E R Y 600-------*/
   .projects {
@@ -976,6 +976,32 @@ a {
   }
 
   /*uvp section900*/
+  .uvp {
+    margin-bottom: 180px;
+  }
+
+  .triangle,
+  .square,
+  .circle {
+    margin: 90px auto 90px;
+  }
+
+  .triangle {
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-top-width: 34px;
+  }
+
+  .square {
+    height: 60px;
+    width: 60px;
+  }
+
+  .circle {
+    height: 64px;
+    width: 64px;
+  }
+
   .uvp-title {
     font-size: 10.7em;
   }
@@ -1164,6 +1190,7 @@ a {
     margin-bottom: 250px;
     margin-left: auto;
     margin-right: auto;
+    text-align: inherit;
     width: 1200px;
   }
 
@@ -1211,9 +1238,6 @@ a {
   }
 
   .triangle {
-    border-left-width: 50px;
-    border-right-width: 50px;
-    border-top-width: 34px;
     left: -300px;
     margin: -17px 0 0;
     top: 50%;
@@ -1236,11 +1260,9 @@ a {
   }
 
   .square {
-    height: 60px;
     margin: -30px 0 0;
     right: -300px;
     top: 50%;
-    width: 60px;
   }
 
   .tools {
@@ -1260,11 +1282,9 @@ a {
   }
 
   .circle {
-    height: 64px;
     left: -300px;
     margin: -32px 0 0;
     top: 50%;
-    width: 64px;
   }
 
   .why-us {
