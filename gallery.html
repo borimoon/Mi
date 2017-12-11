@@ -30,6 +30,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs@1.2.9/interact.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- <script src="js/galleryfix.js"></script> -->
   </head>
 
   <body>
@@ -62,7 +63,7 @@
       <nav class="filter">
       </nav>
 
-      <ul class="projects">
+      <ul id="projectGallery" class="projects">
         <li class="project">
           <a href="project.html">
             <div class="gallery-image">
@@ -285,5 +286,16 @@
         Ⓒ 2017. mimuhely.hu
       </p>
     </footer>
+
+    <script>
+    $(document).ready(function (){
+      if ($( ".project" ).last().is($(".project:nth-child(3n+1)"))) {
+        $( ".projects" ).addClass( "add-two" );
+
+      } else if($( ".project" ).last().is($(".project:nth-child(3n+2)"))) {
+          $( ".projects" ).addClass( "add-one" );
+      }
+    });
+    </script>
   </body>
 </html>

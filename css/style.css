@@ -904,7 +904,7 @@ a {
   .projects::after {
     content: '';
     height: 0;
-    width: calc(2*100%/3);
+    width: calc(100%/2);
   }
 
   .project {
@@ -1065,6 +1065,16 @@ a {
 
   .top span::after {
     right: 6px;
+  }
+
+  /*-------G A L L E R Y 900-------*/
+
+  .add-one::after {
+    width: calc(100%/3);
+  }
+
+  .add-two::after {
+    width: calc(2*100%/3);
   }
 }
 
@@ -1336,7 +1346,8 @@ a {
     width: 1200px;
   }
 
-  .projects::after {
+  .add-one::after,
+  .add-two::after {
     display: none;
   }
 
