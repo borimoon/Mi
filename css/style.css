@@ -956,7 +956,8 @@ a {
   text-transform: uppercase;
 }
 
-.search button::after {
+.search button::after,
+.older-posts::after {
   background-color: #070707;
   bottom: 0;
   content: '';
@@ -971,6 +972,19 @@ a {
   outline: none;
 }
 
+.older-posts-list {
+  margin-bottom: 15px;
+}
+
+.older-posts-list a {
+  text-decoration: underline;
+}
+
+.older-posts {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
 
 @media (min-width: 600px) {
   /*-------H E A D E R / L A N D I N G / F O O T E R 600-------*/
