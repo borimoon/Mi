@@ -603,19 +603,16 @@ a {
   display: block;
 }
 
-.image {
+.thumbnail {
+  height: 200px;
+  margin-bottom: 17px;
   overflow: hidden;
   width: 100%;
 }
 
-.image img {
+.thumbnail img {
   height: auto;
   width: 100%;
-}
-
-.gallery-image {
-  height: 222px;
-  margin-bottom: 17px;
 }
 
 .project-short-title,
@@ -630,7 +627,7 @@ a {
   height: 70px;
   left: 6px;
   position: absolute;
-  top: 207px;
+  top: 187px;
   -webkit-transform: rotate(7deg);
   -moz-transform: rotate(7deg);
   -ms-transform: rotate(7deg);
@@ -754,6 +751,18 @@ a {
   bottom: 0;
 }
 
+.image,
+.image-half {
+  overflow: hidden;
+  width: 100%;
+}
+
+.image img,
+.image-half img {
+  height: auto;
+  width: 100%;
+}
+
 .project-image {
   margin-bottom: 30px;
 }
@@ -787,8 +796,20 @@ a {
   margin: 20px 0 30px;
 }
 
+.additional {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: stretch;
+  justify-content: stretch;
+}
+
 .project-side {
   margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .map {
@@ -796,11 +817,12 @@ a {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  height: 244px;
-  width: 244px;
+  height: 231px;
+  margin: 0 auto;
+  width: 231px;
 }
 
-.portrait {
+.add-quote {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -1141,8 +1163,8 @@ textarea:focus {
 
   /*-------G A L L E R Y 600-------*/
   .page-wrap {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .projects {
@@ -1163,12 +1185,23 @@ textarea:focus {
   .project {
     -webkit-flex: 1 1;
     flex: 1 1;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .gallery-image img {
-    min-width: 277px;
+  .thumbnail img {
+    min-width: 265px;
+  }
+
+  /*-------P R O J E C T600-------*/
+
+  .additional {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+
+  .map {
+    margin: 0;
   }
 }
 
@@ -1321,6 +1354,10 @@ textarea:focus {
   }
 
   /*-------G A L L E R Y 900-------*/
+  .page-wrap {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 
   .add-one::after {
     width: calc(100%/3);
@@ -1328,6 +1365,76 @@ textarea:focus {
 
   .add-two::after {
     width: calc(2*100%/3);
+  }
+
+  /*-------P R O J E C T 900-------*/
+
+  .image-half {
+    max-height: 550px;
+    max-width: 550px;
+  }
+
+  .project-description {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 70px;
+    margin-top: 90px;
+  }
+
+  .project-main {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    margin-right: 115px;
+  }
+
+  .main-title {
+    font-size: 3.7em;
+    margin-bottom: 60px;
+  }
+
+  .project-download {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  .additional {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .project-side {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 17px;
+  }
+
+  .add-quote {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .quote {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    font-size: 3.7em;
+    margin-bottom: 0;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .quote-left {
+    margin-left: 20px;
+  }
+
+  .image-half {
+    -webkit-flex: 1 1;
+    flex: 1 1;
   }
 
   /*-------C O N T A C T 900-------*/
@@ -1364,7 +1471,7 @@ textarea:focus {
   .mi-people {
     -webkit-flex: 1 1;
     flex: 1 1;
-    max-width: 575px;
+    max-width: 550px;
   }
 
   .contact-info,
@@ -1545,7 +1652,7 @@ textarea:focus {
     margin-left: auto;
     margin-right: auto;
     text-align: inherit;
-    width: 1170px;
+    width: 1120px;
   }
 
   .uvp-item {
@@ -1571,7 +1678,7 @@ textarea:focus {
 
   .who-we-are::after {
     height: 727px;
-    left: 516px;
+    left: 491px;
     top: -291px;
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
@@ -1626,7 +1733,7 @@ textarea:focus {
 
   .tools::after {
     height: 470px;
-    left: 574px;
+    left: 549px;
     top: 105px;
     -webkit-transform: rotate(29deg);
     -moz-transform: rotate(29deg);
@@ -1648,8 +1755,8 @@ textarea:focus {
 
   .why-us::after {
     height: 487px;
-    left: -65px;
-    top: 80px;
+    left: -64px;
+    top: 98px;
     -webkit-transform: rotate(-14deg);
     -moz-transform: rotate(-14deg);
     -ms-transform: rotate(-14deg);
@@ -1664,7 +1771,7 @@ textarea:focus {
   }
 
   .top {
-    top: -220px;
+    top: -225px;
   }
 
   .social {
@@ -1679,7 +1786,7 @@ textarea:focus {
   .page-wrap {
     margin: 0 auto;
     padding-top: 150px;
-    width: 1170px;
+    width: 1120px;
   }
 
   .add-one::after,
@@ -1698,11 +1805,11 @@ textarea:focus {
     margin-right: 0;
   }
 
-  .gallery-image {
-    width: 277px;
+  .thumbnail {
+    width: 265px;
   }
 
-  .gallery-image img {
+  .thumbnail img {
     max-width: none;
   }
 
@@ -1713,47 +1820,29 @@ textarea:focus {
     width: 30px;
   }
 
-  .project-image {
-    max-height: 700px;
-    max-width: 1200px;
-  }
-
-  .project-description {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    margin-bottom: 70px;
-    margin-top: 90px;
+  .image {
+    max-height: 630px;
+    max-width: 1120px;
   }
 
   .project-main {
-    -webkit-flex: 2 2;
-    flex: 2 2;
     margin-right: 20px;
   }
 
-  .main-title {
-    font-size: 3.7em;
-    margin-bottom: 60px;
-  }
-
-  .project-download {
-    margin-bottom: 0;
-    margin-top: 30px;
+  .additional {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    -webkit-flex-direction: row;
+    flex-direction: row;
   }
 
   .project-side {
-    margin: 12px 20px 0 0;
-    width: 278px;
+    margin-bottom: 0;
+    margin-right: 20px;
   }
 
-  .project-image-portrait {
-    max-height: 700px;
-    max-width: 574px;
-  }
-
-  .portrait {
-    -webkit-flex-direction: row;
-    flex-direction: row;
+  .quote {
+    max-width: 455px;
   }
 
   .quote-left::before {
@@ -1762,16 +1851,8 @@ textarea:focus {
     top: 22px;
   }
 
-  .quote {
-    font-size: 3.7em;
-    margin-bottom: 0;
-    margin-top: 100px;
-    max-width: 377px;
-    position: relative;
-  }
-
   .quote-left {
-    margin-left: 119px;
+    margin-left: 115px;
   }
 
   /*nav-bottom1200*/
@@ -1818,8 +1899,8 @@ textarea:focus {
 
   .blogposts {
     margin-bottom: 0;
-    margin-left: 198px;
-    max-width: 574px;
+    margin-left: 190px;
+    max-width: 550px;
   }
 
   .post {
@@ -1828,17 +1909,17 @@ textarea:focus {
   }
 
   .date-publish {
-    left: -198px;
+    left: -190px;
     top: 10px;
   }
 
   .blog-image {
-    margin-left: -198px;
+    margin-left: -190px;
     width: auto;
   }
 
   .author {
-    left: -198px;
+    left: -190px;
     margin: 0;
     position: relative;
     top: 35px;
@@ -1849,7 +1930,7 @@ textarea:focus {
   }
 
   .sidebar {
-    max-width: 278px;
+    max-width: 265px;
   }
 
   /*-------C O N T A C T1200-------*/
