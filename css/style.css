@@ -819,6 +819,7 @@ a {
   border-radius: 50%;
   height: 231px;
   margin: 0 auto;
+  overflow: hidden;
   width: 231px;
 }
 
@@ -1097,6 +1098,7 @@ textarea:focus {
   border-radius: 50%;
   height: 136px;
   margin: 0 auto 20px;
+  overflow: hidden;
   width: 136px;
 }
 
