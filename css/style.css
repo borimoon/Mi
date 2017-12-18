@@ -659,7 +659,7 @@ a {
   width: 100%;
 }
 
-/*-------S I N G L E  P R O J E C T-------*/
+/*-------P R O J E C T-------*/
 /*nav-top*/
 .nav-top {
   margin-bottom: 20px;
@@ -751,14 +751,12 @@ a {
   bottom: 0;
 }
 
-.image,
-.image-half {
+.image {
   overflow: hidden;
   width: 100%;
 }
 
-.image img,
-.image-half img {
+.image img {
   height: auto;
   width: 100%;
 }
@@ -769,6 +767,13 @@ a {
 
 .project-image:last-child {
   margin-bottom: 0;
+}
+
+.plan {
+  border: 1px solid #b9bbbe;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .project-description {
@@ -867,7 +872,6 @@ a {
 }
 
 .blogposts {
-  flex-grow: 8;
   margin-bottom: 70px;
 }
 
@@ -897,10 +901,6 @@ a {
 .author {
   margin-bottom: 15px;
   margin-top: 10px;
-}
-
-.sidebar {
-  flex-grow: 3;
 }
 
 .latest,
@@ -1221,6 +1221,49 @@ textarea:focus {
     margin: 0;
   }
 
+  .add-quote {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .portrait {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    max-height: 50%;
+    max-width: 50%;
+  }
+
+  .quote {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    margin-bottom: 0;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .quote-left {
+    margin-left: 20px;
+  }
+
+  /*------B L O G600-------*/
+
+  .sidebar {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .latest,
+  .searchbar,
+  .archives {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+  }
+
+  .latest,
+  .searchbar {
+    margin-right: 30px;
+  }
+
   /*-------C O N T A C T 600-------*/
 
   .location,
@@ -1262,7 +1305,50 @@ textarea:focus {
 @media (min-width: 900px) {
   /*-------H E A D E R / L A N D I N G / F O O T E R 900-------*/
 
-  /*header900*/
+  .logo-small {
+    margin-left: 25px;
+  }
+
+  /*menu900*/
+  .toggle {
+    display: none;
+  }
+
+  .main-menu {
+    margin-right: 25px;
+  }
+
+  .menu {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: transparent;
+    display: -webkit-flex !important;
+    display: flex !important;
+    height: auto;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    position: static;
+    width: auto;
+  }
+
+  .menu li {
+    margin-bottom: 0;
+    margin-right: 42px;
+    margin-top: 0;
+  }
+
+  .menu li:first-child {
+    margin-top: 0;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .menuitem {
+    font-size: 1.3em;
+  }
+
   /*game900*/
   .game {
     margin-top: 0;
@@ -1402,11 +1488,6 @@ textarea:focus {
 
   /*-------P R O J E C T 900-------*/
 
-  .image-half {
-    max-height: 550px;
-    max-width: 550px;
-  }
-
   .project-description {
     -webkit-flex-direction: row;
     flex-direction: row;
@@ -1447,27 +1528,34 @@ textarea:focus {
     margin-top: 17px;
   }
 
-  .add-quote {
+  .quote {
+    font-size: 2.9em;
+    margin-top: 50px;
+  }
+
+  /*------B L O G900-------*/
+
+  .blog {
     -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
   }
 
-  .quote {
-    -webkit-flex: 1 1;
-    flex: 1 1;
-    font-size: 3.7em;
-    margin-bottom: 0;
-    margin-top: 50px;
-    position: relative;
+  .blogposts {
+    margin-bottom: 120px;
+    margin-right: 20px;
+    max-width: 70%;
   }
 
-  .quote-left {
-    margin-left: 20px;
+  .sidebar {
+    display: block;
+    max-width: 265px;
   }
 
-  .image-half {
-    -webkit-flex: 1 1;
-    flex: 1 1;
+  .latest,
+  .searchbar {
+    margin-right: 0;
   }
 
   /*-------C O N T A C T 900-------*/
@@ -1605,41 +1693,6 @@ textarea:focus {
 
   .main-menu {
     margin-right: 22px;
-  }
-
-  .toggle {
-    display: none;
-  }
-
-  .menu {
-    background-color: transparent;
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-flex !important;
-    display: flex !important;
-    height: auto;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    position: static;
-    width: auto;
-  }
-
-  .menu li {
-    margin-bottom: 0;
-    margin-right: 42px;
-    margin-top: 0;
-  }
-
-  .menu li:first-child {
-    margin-top: 0;
-  }
-
-  .menu li:last-child {
-    margin-right: 0;
-  }
-
-  .menuitem {
-    font-size: 1.3em;
   }
 
   /*landing-section1200*/
@@ -1864,15 +1917,20 @@ textarea:focus {
     max-width: none;
   }
 
-  /*-------S I N G L E  P R O J E C T 1200-------*/
+  /*-------P R O J E C T 1200-------*/
   /*nav-top1200*/
   .top-prev,
   .top-next {
     width: 30px;
   }
 
-  .image {
+  .landscape {
     max-height: 630px;
+    max-width: 1120px;
+  }
+
+  .plan {
+    max-height: 747px;
     max-width: 1120px;
   }
 
@@ -1893,6 +1951,7 @@ textarea:focus {
   }
 
   .quote {
+    font-size: 3.7em;
     max-width: 455px;
   }
 
@@ -1941,16 +2000,11 @@ textarea:focus {
   }
 
   /*-------B L O G1200-------*/
-  .blog {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-  }
 
   .blogposts {
     margin-bottom: 0;
     margin-left: 190px;
+    margin-right: 0;
     max-width: 550px;
   }
 
@@ -1978,10 +2032,6 @@ textarea:focus {
 
   .excerpt {
     margin-top: 12px;
-  }
-
-  .sidebar {
-    max-width: 265px;
   }
 
   /*-------C O N T A C T1200-------*/
