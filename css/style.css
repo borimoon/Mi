@@ -1474,8 +1474,13 @@ textarea:focus {
 
   /*-------G A L L E R Y 900-------*/
   .page-wrap {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+
+  .project {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .add-one::after {
