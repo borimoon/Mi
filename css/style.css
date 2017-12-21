@@ -97,7 +97,7 @@ a {
   height: 50px;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  opacity: .95;
+  opacity: .97;
   position: fixed;
   top: 0;
   -webkit-transition: all 0.4s ease;
@@ -582,6 +582,7 @@ a {
 }
 
 /*-------G A L L E R Y -------*/
+
 .page-wrap {
   margin: 0 15px;
   padding-top: 90px;
@@ -662,7 +663,7 @@ a {
 /*-------P R O J E C T-------*/
 /*nav-top*/
 .nav-top {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .nav-list {
@@ -1179,10 +1180,6 @@ textarea:focus {
   }
 
   /*-------G A L L E R Y 600-------*/
-  .page-wrap {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
 
   .projects {
     -webkit-flex-direction: row;
@@ -1305,8 +1302,23 @@ textarea:focus {
 @media (min-width: 900px) {
   /*-------H E A D E R / L A N D I N G / F O O T E R 900-------*/
 
+  .header {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
+
+  .header-narrow,
+  .header-narrow-pages {
+    height: 50px;
+  }
+
   .logo-small {
     margin-left: 25px;
+  }
+
+  .header-narrow-pages .logo-small {
+    display: block;
+    margin-bottom: 5px;
   }
 
   /*menu900*/
@@ -1315,6 +1327,7 @@ textarea:focus {
   }
 
   .main-menu {
+    margin-bottom: 7px;
     margin-right: 25px;
   }
 
@@ -1335,6 +1348,7 @@ textarea:focus {
     margin-bottom: 0;
     margin-right: 42px;
     margin-top: 0;
+    position: relative;
   }
 
   .menu li:first-child {
@@ -1343,6 +1357,16 @@ textarea:focus {
 
   .menu li:last-child {
     margin-right: 0;
+  }
+
+  .menu li::after {
+    background-color: #070707;
+    bottom: -7px;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
   }
 
   .menuitem {
@@ -1387,7 +1411,7 @@ textarea:focus {
 
   /*uvp section900*/
   .uvp {
-    margin-bottom: 180px;
+    margin: 0 25px 180px;
   }
 
   .triangle,
@@ -1473,14 +1497,20 @@ textarea:focus {
   }
 
   /*-------G A L L E R Y 900-------*/
+
   .page-wrap {
-    margin-left: 13px;
-    margin-right: 13px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .gallery-wrap {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .project {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .add-one::after {
@@ -1578,8 +1608,6 @@ textarea:focus {
   .about {
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    margin-left: 5px;
-    margin-right: 5px;
   }
 
   .contact,
@@ -1635,8 +1663,6 @@ textarea:focus {
   .location {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
-    margin-left: 5px;
-    margin-right: 5px;
   }
 
   .location-details {
@@ -1672,13 +1698,10 @@ textarea:focus {
   /*-------H E A D E R / L A N D I N G / F O O T E R 1200-------*/
 
   /*header1200*/
-  .header {
-    height: 150px;
-  }
-
-  .header-narrow,
-  .header-gallery {
-    height: 70px;
+  .header-full {
+    -webkit-align-items: center;
+    align-items: center;
+    height: 130px;
   }
 
   .logo {
@@ -1686,25 +1709,31 @@ textarea:focus {
     margin-left: 15px;
   }
 
+  .logo-main {
+    height: 120px;
+    width: 99px;
+  }
+
+  .logo-main-small {
+    height: 40px;
+    margin-bottom: 5px;
+    width: 42px;
+  }
+
   .logo-small {
     display: none;
   }
 
-  .header-gallery .logo-small {
-    display: block;
-    height: 50px;
-    width: 52px;
-  }
-
-  .main-menu {
-    margin-right: 22px;
+  .logo-transform {
+    -webkit-transition: width .1s, height .1s, margin-bottom .1s, -webkit-transform .1s, src 2s;
+    transition: width .1s, height .1s, margin-bottom .1s, transform .1s, src 2s;
   }
 
   /*landing-section1200*/
   .landing {
     -webkit-flex-direction: column;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 130px;
     position: relative;
   }
 
@@ -1888,13 +1917,10 @@ textarea:focus {
   }
 
   /*-------G A L L E R Y 1200-------*/
-  /*dev*/.menu-projects {
-  font-weight: 600;
-  }
 
   .page-wrap {
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 130px;
     width: 1120px;
   }
 
@@ -2040,13 +2066,6 @@ textarea:focus {
   }
 
   /*-------C O N T A C T1200-------*/
-
-  .contact,
-  .location,
-  .about {
-    margin-left: 0;
-    margin-right: 0;
-  }
 
   .contact-info::after,
   .location-info::after,
