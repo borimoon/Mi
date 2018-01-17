@@ -410,7 +410,7 @@ a {
 }
 /*/game*/
 
-.cta-landing {
+.cta-main {
   -webkit-align-items: center;
   align-items: center;
   display: -webkit-flex;
@@ -1764,18 +1764,23 @@ textarea:focus {
   }
   /*/game1200*/
 
-  .cta-landing {
+  .cta-main {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
     position: relative;
+    width: 100%;
   }
 
   .cta-title {
-    bottom: 0;
-    left: -285px;
+    cursor: pointer;
+    left: 25px;
     position: absolute;
+    text-align: left;
+    top: -40px;
   }
 
   .scroll-down {
-    bottom: 35px;
+    bottom: 25px;
     left: 50%;
     margin-bottom: 0;
     margin-left: -31px;
